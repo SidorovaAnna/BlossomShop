@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Data.Entity;
+
+namespace BlossomShop.Models
+{
+    //задаем контексты данных для обеих моделей
+    public class BlossomContext : DbContext 
+    {
+        public DbSet<Blossom> Blossoms { get; set; }
+        public DbSet<Purchase> Purchases { get; set; }
+    }
+}
